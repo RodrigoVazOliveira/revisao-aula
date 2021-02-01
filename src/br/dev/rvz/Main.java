@@ -1,7 +1,9 @@
 package br.dev.rvz;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -55,5 +57,24 @@ public class Main {
             System.out.println("lista de números: " + n);
         }
 
+
+        /*
+        * HashMap com foreach
+        * */
+
+        HashMap<String, String> listaComida = new HashMap<>();
+        listaComida.put("vinicius", "batata");
+        listaComida.put("thiago", "strogonoff");
+        listaComida.put("rodrigo", "molho de batata");
+
+        for (Map.Entry<String, String> value : listaComida.entrySet()) {
+            System.out.println(value);
+        }
+
+        System.out.println("com foreach do propio metodo da hash");
+        listaComida.forEach((key, value) -> {
+            System.out.println(key + "=" + value);
+        });
     }
+
 }
