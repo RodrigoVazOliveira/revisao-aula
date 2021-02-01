@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        boolean ePar = (10 % 2)  == 0;
+        boolean ePar = (11 % 2)  == 0;
 
         if (ePar)
             System.out.println("O número é par!");
